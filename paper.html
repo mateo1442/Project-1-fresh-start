@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .paper {
+            width: 200px;
+            height: 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            position: relative;
+            transform-origin: top;
+            animation: unfold 2s forwards;
+            overflow: hidden;
+        }
+
+        @keyframes unfold {
+            0% {
+                height: 0;
+                transform: rotateX(90deg);
+            }
+            100% {
+                height: 300px;
+                transform: rotateX(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="paper"></div>
+
+</body>
+</html>
