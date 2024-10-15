@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courtney</title>
     <style>
+        p {
+            text-align: justify; /* Justifies the text */
+            letter-spacing: 0.05em; /* Increases letter spacing */
+            margin-bottom: 1em; /* Adds space between paragraphs */
+        }
+        
         body {
             display: flex;
             justify-content: center;
@@ -15,6 +21,7 @@
             margin: 0;
             background-color: #f0f0f0;
             overflow: hidden;
+            font-size: 24px;
         }
 
         .grey-rectangle {
@@ -30,15 +37,7 @@
             animation: slideDown 1s ease forwards;
         }
 
-        .brown-bar {
-            width: 100%;
-            height: 20%; 
-            background-color: #8B4513; 
-            position: absolute; 
-            top: 0; 
-            left: 0; 
-            z-index: 1; 
-        }
+
 
         .brown-box {
             width: 550px;
@@ -68,19 +67,24 @@
         }
 
         .paper {
-            width: 450px;
-            height: 650px;
+            width: 285px;
+            height: fit-content;
             background-color: white;
             border: 1px solid #ccc;
             position: relative;
             transform-origin: top;
             animation: unfold 2s forwards;
             display: flex;
-            justify-content: center;
+            justify-content: auto;
             align-items: center;
-            text-align: center;
+            text-align: justify;
             padding: 20px;
             box-sizing: border-box;
+        }
+
+        .right {
+            display: inline-block;
+            justify-content: right;
         }
 
         .mirror {
@@ -142,6 +146,11 @@
             max-height: 100%; 
             z-index: 2; 
         }
+
+        .websafe-font {
+            font-family: 'Courier New', monospace; 
+            font-size: 13px;
+        }
     </style>
 </head>
 
@@ -152,18 +161,29 @@
         <div class="brown-box">
             <div class="paper">
                 <div>
-                    <span class="mirror">(22)</span><br>
-                    <span class="mirror"> 6/16/23 Courtney</span>
                     <p>
-                        ---------------------------------------------------------------------------- <br><br>
-                        Hell<br>
-                        Yeah<br>
-                        you're doing it<br>
-                        be happy
+                        Down the hall I heard 
+                        a man wish someone
+                        a happy birthday:
+                        out on the streets of 
+                        New Haven, a girl proclai- 
+                        med with excitement, "it's
+                        like New York!"
+                        In a library, two stranger
+                        wrote notes, while snow fell,
+                        <s>whi</s> we all loved, while snow 
+                        fell.
+<br> 
+<span style="text-align: right; display:block;">-D.C.</span>
+
+<br>
+
+<span class="websafe-font">Found in box #5131</span>
+
+
+
                     </p>
-                    <p>
-                        found in box #6923
-                    </p>
+                    
                 </div>
             </div>
         </div>
