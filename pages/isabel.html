@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="brown-bar"></div> 
+    <button class="toggle-button" onclick="toggleSlide()">Original Image</button>
+    <div class="grey-rectangle">
+        <div class="brown-box">
+            <div class="paper">
+                <div>
+                    <p>
+                       Love you, love you, love you<br>
+                       To the ends of the earth.<br>
+                       Knowing you is the best<br>
+                       thing thats happened in <br>
+                       my life and sometimes I <br>
+                       can't believe it's real. you'll<br>
+                       never see this but that's okay,<br>
+                       I just want it to stay here <br>
+                       in the world even after I'm gone.<br>
+                       to the best friend I ever had, with &#9825;<br>
+                       -Isabel
+<br>
+
+<span class="websafe-font">Found in box #6886</span>
+
+
+
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <a href="https://mateo1442.github.io/Project-1-fresh-start/" class="black-rectangle">Return Drawer</a>
+    </div>
+    <div class="slide-out" id="slideBox">
+        <img src="IMG_4674.jpeg" alt="Italian Trulli">
+    </div>
+
+    <script>
+        function toggleSlide() {
+            const slideBox = document.getElementById('slideBox');
+            slideBox.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
